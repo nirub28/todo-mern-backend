@@ -15,6 +15,10 @@ const PORT = process.env.PORT;
 //The database connection
 const db = require("./config/mongoose.js");
 
+// Middleware to parse JSON data
+app.use(express.json());
+
+
 const cors = require('cors');
 app.use(cors());
 
