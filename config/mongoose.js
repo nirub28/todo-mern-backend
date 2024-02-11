@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");  // data base connection
 
-mongoose.connect("mongodb://127.0.0.1:27017/todo-mern");
+mongoose.connect(process.env.DB_URL);
 
 const db = mongoose.connection;
 
